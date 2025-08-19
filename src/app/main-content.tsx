@@ -47,7 +47,7 @@ export function MainContent({ user, project }: MainContentProps) {
                 </div>
 
                 {/* Chat Content */}
-                <div className="flex-1 overflow-hidden">
+                <div className="flex-1 overflow-hidden flex flex-col">
                   <ChatInterface />
                 </div>
               </div>
@@ -77,7 +77,7 @@ export function MainContent({ user, project }: MainContentProps) {
                 {/* Content Area */}
                 <div className="flex-1 overflow-hidden bg-neutral-50">
                   {activeView === "preview" ? (
-                    <div className="h-full bg-white">
+                    <div className="h-full bg-white flex items-center justify-center">
                       <PreviewFrame />
                     </div>
                   ) : (
