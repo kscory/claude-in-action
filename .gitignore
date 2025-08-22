@@ -49,3 +49,34 @@ next-env.d.ts
 # database
 /prisma/dev.db
 /prisma/dev.db-journal
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Local configuration and secrets
+.claude/settings.local.json
+*.key
+*.pem
+secrets/
+.secrets
+config/local.*
+.env.*.local
+
+# Logs that might contain sensitive data
+*.log
+logs/
+*.log.*
+
+# Temporary files that might contain secrets
+temp/
+tmp/
+*.tmp
+.cache/
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
